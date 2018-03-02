@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<title>SSofAK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-blue">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">SSofAK Home</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#patients" class="w3-button w3-block">Patient Info</a>
+    </div>
+	<div class="w3-col s2">
+      <a href="#patients" class="w3-button w3-block">Patient Info</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#about" class="w3-button w3-block">Medical Team</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>Surgical Specialists of Alaska</b></h1>
+    <p>Serving the greater Alaska community</p>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="images/mountains.jpg" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Home</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/mountmarithon2015Kris.jpg" style="width:100%">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Lifestyle</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/community.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Community</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Our Services</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+      <h3>Quality Care</h3>
+      <p>Our medical team is experienced in a full range of treatments — from head to toe — taking the time
+	  to understand your specific needs to develop a plan that's right for you.  Sometimes treatment involves 
+	  surgery, such as total joint replacement , and many times, it doesn't.  You’ll find excellence
+	  in care from our doctors, who are experienced in the most advanced and least invasive treatments available.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3>Trauma Care</h3>
+      <p> 
+<ul style="list-style-type:disc">
+  <li>Orthopedic Trauma</li>
+  <li>Orthopedic Surgery</li>
+  <li>Sports Medicine Trauma</li>
+  <li>Total Knee Replacement</li>
+  <li>Total Hip Replacement</li>	  
+	</ul>
+   </p>
+  </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3>Special Care</h3>
+      <p>
+	<ul style="list-style-type:disc">
+  <li>Total Shoulder Replacement</li>
+  <li>Arthroscopy: Shoulder, Wrist and Knee</li>
+  <li>Foot and Ankle</li>
+  <li>Pediatric Orthopedics</li> 
+  <li>Upper Extremities</li>
+  <li>Wrist and Hand</li>
+	</ul> 	  
+   </p>
+  </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>Our Promise</h3>
+      <p>We have been a longstanding member of the community and we stand behind our staff in providing the best surgical 
+support in Alaska.</p>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="patients">
+    <div class="w3-center w3-padding-64">
+      <h3>Patient Info</h3>
+      <p>Forms and Resources</p>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32"> FOR NEW PATIENTS</li>
+        <li class="w3-padding-16">New Patient Packet</li>
+        <li class="w3-padding-16"><b>HIPAA</b> Notice of Privacy Practices</li>
+        <li class="w3-padding-16">Release of Information</li>
+        <li class="w3-padding-16">
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">FOR CURRENT PATIENTS</li>
+        <li class="w3-padding-16"><b>HIPAA </b>Acknowledgement and Consent (yearly update)</li>
+        <li class="w3-padding-16">Medical History Update</li>
+        <li class="w3-padding-16">Medication Refill Policy</li>
+        <li class="w3-padding-16">
+         
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">PAYMENT</li>
+        <li class="w3-padding-16">Card Authorization Form</li>
+        <li class="w3-padding-16">
+        
+      </ul>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Medical Team</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/kriskile.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Kris Kile</h3>
+          <p class="w3-opacity">Kris Kile, ANP, RN, MSN, CWCN, FNP-C</p>
+          <p>With a collective 17 years in Orthopedic and Primary Care, Kris Kile provides 
+		  extensive knowledge and experience. Kris strives to assist patients in maintaining 
+		  their general and orthopedic health. 
+		  </p>
+		  <p>Kris aids in surgery with the other providers and renders post-operative 
+		  care to surgical patients.</p>
+		  Committed to continuing education, she is currently in the process of becoming certified to treat post-opioid 
+patients.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/doctorcard.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Elon Musk</h3>
+          <p class="w3-opacity">Doctor of Medicine (M.D.)</p>
+          <p>Board certified State of Alaska. 25 years medical practice and patient delivery.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/doctorcard.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Warren Buffet</h3>
+          <p class="w3-opacity">Orthopaedic Surgeon</p>
+          <p>Board certified State of Alaska. 25 years medical practice and patient delivery.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+
+  <address>
+For more information E-mail us at: <a href="mailto:info@ssofalaska.com">info@ssofalaska</a><br> 
+or <br> 
+visit us at our website: <b>https://www.ssofak.com</b> <br>
+
+ADDRESS: 2751 DEBARR ROAD<br>
+		 Anchorage, ALASKA 99508<br>
+PHONE: 907-277-9700 <br>
+FAX: 907-258-8010 <br>
+</address>
+  
+  
+  <!-- to be attached later
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+  </form>
+  -->
+
+</div>
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(61.210195, -149.829322);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwr8tiR_BeD46AbfTdJYD52z3rTBeA6tU&callback=myMap"></script>
+  <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+  $(function() {
+    $(".video").click(function () {
+      var theModal = $(this).data("target"),
+      videoSRC = $(this).attr("data-video"),
+      videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+      $(theModal + ' iframe').attr('src', videoSRCauto);
+      $(theModal + ' button.close').click(function () {
+        $(theModal + ' iframe').attr('src', videoSRC);
+      });
+    });
+  });
+  </script>
+
+
+
+
+
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>Social Network: Please follow us on your social network!</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Return Home</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" 
+class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
